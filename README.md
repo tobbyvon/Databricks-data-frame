@@ -1,6 +1,8 @@
 # Databricks-data-frame
 This repository cleans and analyzes a csv file on medical study
+
 # Introduction
+
 Clinical trial datasets with the combination of parent company information within a list of pharmaceutical companies dataset  was analysed and basic implementation was to  made to achieve the solutions to the problems. The results  to the analysis is based on the enquiry for further insights on: the number of studies in Clinical trial 2021 dataset,  types of studies in the dataset along with the frequencies of each type, The top 5 conditions with their frequencies, the top ten most common sponsors that are not pharmaceutical companies, along with the number of clinical trials they have sponsored, and a visualization of the number of completed studies each month in a given year. The solutions to these enquires are implemented in RDD, SQL and Data Frame.
 The setup required to be able to complete these implementations include creating a cluster  called Assessment Cluster.
 
@@ -23,6 +25,7 @@ The zip archive is then extracted, Since the dbutils toolkit doesn't provide an 
  
 
 # Question 1 
+
 The number of studies in the dataset. 
 RDD
  
@@ -37,6 +40,7 @@ To get the number of studies in the dataset using data frame,
 To get the number of studies in the dataset, the view created during data cleaning is loaded into a data frame named “clinicaldf” and a select function was used to select the row named “Id” which is then counted in the studycount dataframe which the print function displays.
 
 # Question 2
+
 List of all the types of studies in the dataset along with the frequencies of each type. 
 RDD
  
